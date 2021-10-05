@@ -1,0 +1,180 @@
+@media (max-width: 1200px) {
+    #benefits {
+        padding: 160px 0;
+    }
+    #benefits img {
+        margin-top: 100px;
+    }
+    #benefits h1{
+        margin: 0 auto;
+        max-width: 992px;
+        margin-bottom: 30px;
+    }
+    #benefits p {
+        max-width: 992px;
+    }
+    .benefit1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+    }
+    .img1 {
+        display: none;
+    }
+    .img-big {
+        display: block;
+    }
+    .benefit2 {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 160px;
+    }
+    .benefit3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 160px;
+    }
+    .benefit3 .content {
+        margin-top: 0;
+    }
+    #testimonial {
+        text-align: center;
+        padding-bottom: 160px;
+    }
+    #testimonial h1 {
+        margin-bottom: 50px;
+    }
+    #testimonial .row {
+        margin-top: 0px;
+    }
+    .card {
+        width: 80%;
+        margin: 30px auto 0;
+    }
+    .card-contaiter {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        background: url('../img/hero-bg.jpg') center/cover no-repeat;
+        height: 700px;
+    }
+    #menu {
+        display: none;
+        position: absolute;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        right: 100%;
+        padding-left: 0;
+        gap: 0;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    #menu.active {
+        display: flex;
+        opacity: 1;
+        right: 0;
+    }
+    .link {
+        color: #697694;
+    }
+    .link:hover {
+        color: white;
+    }
+    .list {
+        width: 100%;
+        line-height: 80px;
+        text-align: center;
+    }
+    .list:hover {
+        background-color: #697694;
+        color: white;
+    }
+    .nav-btn {
+        padding: 0;
+        background-color: rgba(250, 250, 250, 0);
+    }
+    #btnmobile {
+        border-top: 2px solid white;
+        width: 30px;
+        display: block;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    #btnmobile::after, #btnmobile::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin-top: 5px;
+        transition: all 0.5s ease;
+    }
+    #btnmobile.active {
+        border-top-color: transparent;
+    }
+    #btnmobile.active::before {
+        transform: rotate(135deg) translateY(-2px);
+    }
+    #btnmobile.active::after {
+        transform: rotate(-135deg) translateY(6px);
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    #benefits {
+        padding: 100px 0;
+    }
+    #benefits img, .benefit2, .benefit3 {
+        margin-top: 60px;
+    }
+    #testimonial {
+        padding-bottom: 100px;
+    }
+    #testimonial h1 {
+        margin-bottom: 30px;
+    }
+    .card {
+        width: 100%;
+    }
+    .card-contaiter {
+        max-width: 320px;
+    }
+
+    #footer h2 {
+    margin-top: 50px;
+    }
+    #footer #email-input {
+        width: 65%;
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        height: 650px;
+    }
+    #hero {
+        padding-top: 140px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 17px;
+    }
+    #email-input {
+        display: none;
+    }
+    button {
+        margin-top: 30px;
+    }
+}
